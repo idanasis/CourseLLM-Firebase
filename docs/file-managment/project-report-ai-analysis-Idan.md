@@ -57,6 +57,7 @@ To overcome the limitations of the internal tool, the workflow was shifted to ex
 Manual Intervention: We manually exported code snippets to these external models to fix broken test suites and resolve the configuration loops.
 
 Refactoring: External models were used to clean up the "slop" (unused code/dependencies) left behind by the initial scaffolding.
-
-5. Conclusion
+5. what I learned:
+A key lesson learned from this project is that integrating Large Language Models (LLMs) into the development workflow is not an automatic efficiency boost; without precise prompt engineering, it can actually lead to time-consuming loops and context loss. However, we discovered that when the AI is guided correctly—specifically by combining specialized agents (e.g., using different models for scaffolding versus complex logic), it transforms from a potential bottleneck into a powerful accelerator, capable of handling robust tasks like testing and system monitoring
+6. Conclusion
 The project successfully delivered a robust File Management and Monitoring system. However, the experience highlighted that while integrated IDE assistants are excellent for starters and boilerplate, they currently lack the stability and long-context reasoning required for complex debugging and system architecture. The move to specialized external LLMs was necessary to bring the project to a production-ready state.
